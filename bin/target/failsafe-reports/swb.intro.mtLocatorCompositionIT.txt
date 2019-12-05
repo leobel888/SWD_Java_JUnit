@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: swb.intro.mtLocatorCompositionIT
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.69 sec <<< FAILURE! - in swb.intro.mtLocatorCompositionIT
+byAndCntForm(swb.intro.mtLocatorCompositionIT)  Time elapsed: 3.592 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using [unknown locator]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-HVDDQFT', ip: '169.254.160.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.By.findElement(By.java:162)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at swb.intro.mtLocatorCompositionIT.byAndCntForm(mtLocatorCompositionIT.java:66)
+
