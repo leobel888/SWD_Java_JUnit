@@ -23,25 +23,42 @@ public class mtKeyboardInputIT <W extends WebDriver & HasInputDevices> {
 	
 	@Inject
 		private W driver;
-		
+/*		
 	@Test
 	public void completingAForm() throws Exception {
 		
+        
+		driver.get("/login");
+        driver
+				.findElement(By.id("user_name")) // locate the user name input
+				.sendKeys("Demo2"); // you enter text here into the input
+		
+		driver.getKeyboard().sendKeys(Keys.TAB); // now you tab to the checkbox
+		
+		driver
+				.switchTo().activeElement() // change to the currently active element
+				.sendKeys("12345678");
+				
+		driver.getKeyboard().sendKeys(Keys.TAB);
+		
+		driver
+				.switchTo().activeElement() // change to the currently active element
+				.sendKeys(" ");
+		
+		driver.getKeyboard().pressKey(Keys.ENTER);
+		driver.getKeyboard().releaseKey(Keys.ENTER);
+	}
+*/	
+	@Test
+//	@Ignore("this test does not work on Firefox")
+	public void enteringCheckBox() throws Exception {
 		driver.get("/login");
 		
-		driver.findElement(ElementBy.automationId(String.format("loginform-item-%d", 0)));
+		WebElement form = driver.findElement(ElementBy.automationId(String.format("loginform-item-%d", 0)));
+		WebElement checkbox = form.findElement(By.cssSelector("input[type='checkbox']"));
 		
-		WebElement loginForm = driver.findElement(ElementBy.automationId(String.format("loginform-item-%d", 0)));
-		
-		WebElement UserName = loginForm.findElement(By.name("user_name"));
-		UserName.clear();
-		UserName.sendKeys("Demo2");
-		
-		WebElement UserPassword = loginForm.findElement(By.name("user_password"));
-		UserPassword.clear();
-		UserPassword.sendKeys("12345678");
-		
-		loginForm.findElement(By.cssSelector("input[type='submit']"))
-			.click();
+		if(!checkbox.isSelected()) {
+			checkbox.sendKeys(" ");
 		}
+	}
 }
