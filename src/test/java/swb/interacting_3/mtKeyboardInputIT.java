@@ -23,7 +23,7 @@ public class mtKeyboardInputIT <W extends WebDriver & HasInputDevices> {
 	
 	@Inject
 		private W driver;
-/*		
+		
 	@Test
 	public void completingAForm() throws Exception {
 		
@@ -48,7 +48,7 @@ public class mtKeyboardInputIT <W extends WebDriver & HasInputDevices> {
 		driver.getKeyboard().pressKey(Keys.ENTER);
 		driver.getKeyboard().releaseKey(Keys.ENTER);
 	}
-*/	
+	
 	@Test
 //	@Ignore("this test does not work on Firefox")
 	public void enteringCheckBox() throws Exception {

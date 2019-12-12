@@ -3,6 +3,7 @@ swb\interacting_3\mtKeyboardInputIT.class
 swb\framework\ElementVisible.class
 swb\locators\LinkText.class
 swb\framework\FormElements.class
+swb\interacting_3\mtWyswygInputIT.class
 swb\drivers\AbstractDriverBinarySupplier.class
 swb\factory\NotBy.class
 swb\intro\mtHelloWebDriverIT.class
@@ -16,6 +17,7 @@ swb\locators\ClassName.class
 swb\drivers\ChromeDriverBinarySupplier.class
 swb\factory\AnyBy.class
 swb\framework\Element.class
+swb\interacting_3\mtWyswygInput.class
 swb\locators\jsdatepick\JsDatepickById.class
 swb\factory\ElementBy.class
 swb\locators\jquery\JQueryByClassName.class
@@ -54,3 +56,4 @@ swb\framework\DelegatingSearchContext.class
 swb\locators\react\ReactByXpath.class
 swb\locators\material_ui\MaterialByXpath.class
 swb\framework\Browser.class
+swb\interacting_3\mtMouseInputIT.class

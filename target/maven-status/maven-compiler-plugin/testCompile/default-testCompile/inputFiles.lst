@@ -15,6 +15,7 @@ C:\SWD\mental\src\test\java\swb\framework\ScreenshotTaker.java
 C:\SWD\mental\src\test\java\swb\locators\jsdatepick\JsDatepickByClassName.java
 C:\SWD\mental\src\test\java\swb\intro\mtHelloWebDriverIT.java
 C:\SWD\mental\src\test\java\swb\locators\StringToMonth.java
+C:\SWD\mental\src\test\java\swb\interacting_3\mtMouseInputIT.java
 C:\SWD\mental\src\test\java\swb\drivers\FirefoxDriverBinarySupplier.java
 C:\SWD\mental\src\test\java\swb\framework\BaseUrlDriver.java
 C:\SWD\mental\src\test\java\swb\factory\AllBy.java
@@ -26,8 +27,10 @@ C:\SWD\mental\src\test\java\swb\locators\jquery\JQueryByClassName.java
 C:\SWD\mental\src\test\java\swb\framework\ElementVisible.java
 C:\SWD\mental\src\test\java\swb\framework\robust\Retry.java
 C:\SWD\mental\src\test\java\swb\framework\DelegatingSearchContext.java
+C:\SWD\mental\src\test\java\swb\interacting_3\mtWyswygInput.java
 C:\SWD\mental\src\test\java\swb\locators\TagName.java
 C:\SWD\mental\src\test\java\swb\framework\Element.java
+C:\SWD\mental\src\test\java\swb\interacting_3\mtWyswygInputIT.java
 C:\SWD\mental\src\test\java\swb\framework\DelegatingWebElement.java
 C:\SWD\mental\src\test\java\swb\framework\WebDriverRunner.java
 C:\SWD\mental\src\test\java\swb\interacting_3\mtKeyboardInputIT.java
