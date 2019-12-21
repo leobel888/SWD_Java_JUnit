@@ -54,8 +54,8 @@ public class mtMouseInputIT {
 				.findElement(By.className("remember-me-label"))
 				.click(); // #A click the checkbox
 		
-		assertEquals(true, 
-						form.findElement(By.cssSelector("input[type='checkbox']"))
-						.isSelected());
+		assertEquals(true, form
+								.findElement(By.cssSelector("input[type='checkbox']"))
+								.isSelected());
 	}
 }

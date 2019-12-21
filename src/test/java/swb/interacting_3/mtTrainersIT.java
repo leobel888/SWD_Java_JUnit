@@ -1,31 +1,32 @@
 package swb.interacting_3;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import swb.framework.WebDriverRunner;
 import swb.factory.ElementBy;
+import swb.factory.InputBy;
 
 import javax.inject.Inject;
 import java.net.URI;
 
 @RunWith(WebDriverRunner.class)
-public class mtLoginIT {
+public class mtTrainersIT {
+    @Inject
+    private WebDriver driver;
+    @Inject
+    private URI baseUrl;
 	
-	@Inject
-	private WebDriver driver;
-	@Inject
-	private URI baseUrl;
-	
-	@Test
-	public void completingAForm() throws Exception {
+	@Before
+	public void completingLoginForm() throws Exception {
 		driver.get(baseUrl + "/login");
-		
-//		driver.findElement(ElementBy.automationId(String.format("loginform-item-%d", 0)));
 		
 		WebElement loginForm = driver.findElement(ElementBy.automationId(String.format("loginform-item-%d", 0)));
 		
@@ -45,6 +46,13 @@ public class mtLoginIT {
 		
 		loginForm.findElement(By.cssSelector("input[type='submit']"))
 			.click();
+			
+		WebElement MainMenu = driver
+										.findElements(By.tagName("a"))
+										.stream()
+										.filter(e -> e.getText().contains("Trainers"))
+										.findFirst()
+										.get();	
+			
 		}
 }
-
