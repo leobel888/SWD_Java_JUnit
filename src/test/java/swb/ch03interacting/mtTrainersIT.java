@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 import swb.framework.WebDriverRunner;
 import swb.factory.ElementBy;
 import swb.factory.InputBy;
@@ -19,12 +21,12 @@ import java.net.URI;
 
 @RunWith(WebDriverRunner.class)
 public class mtTrainersIT {
-    @Inject
+ /*   @Inject
     private WebDriver driver;
     @Inject
     private URI baseUrl;
 	
-	@Before
+	@Test
 	public void completingLoginForm() throws Exception {
 		driver.get(baseUrl + "/login");
 		
@@ -46,13 +48,19 @@ public class mtTrainersIT {
 		
 		loginForm.findElement(By.cssSelector("input[type='submit']"))
 			.click();
-			
-		WebElement MainMenu = driver
+		
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS); 
+		driver.manage().window().maximize();
+		
+		
+		WebElement element = driver
 										.findElements(By.tagName("a"))
 										.stream()
-										.filter(e -> e.getText().contains("Trainers"))
+										.filter(e -> e.getText().contains("TRAINERS"))
 										.findFirst()
-										.get();	
+										.get();
+										
+		element.click();
 			
-		}
+		}*/
 }

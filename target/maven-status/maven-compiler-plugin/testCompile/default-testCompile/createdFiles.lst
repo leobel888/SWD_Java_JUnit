@@ -1,4 +1,5 @@
 swb\locators\Id.class
+swb\ch04examiningapage\mtVerifyingFormIT.class
 swb\interacting_3\mtKeyboardInputIT.class
 swb\framework\ElementVisible.class
 swb\locators\LinkText.class
@@ -37,12 +38,14 @@ swb\drivers\WebDriverBinarySupplier.class
 swb\locators\react\ReactByClassName.class
 swb\framework\DelegatingWebElement.class
 swb\ch04examiningapage\mtPageTitleIT.class
+swb\ch04examiningapage\mtVerifyingTextIT.class
 swb\framework\BrowserConfig.class
 swb\locators\jsdatepick\JsDatepickByClassName.class
 swb\framework\HttpStatusCodeSupplier.class
 swb\locators\jquery\JQueryById.class
 swb\drivers\FirefoxDriverBinarySupplier.class
 swb\ch04examiningapage\mtElementIsPresentIT.class
+swb\ch03interacting\mtLogin.class
 swb\framework\BrowserRunner$ConfigShim.class
 swb\framework\robust\Attemptable.class
 swb\framework\SearchScope.class
@@ -50,6 +53,7 @@ swb\locators\bootstrap\BootstrapByClassName.class
 swb\locators\CssSelector.class
 swb\locators\TagName.class
 swb\framework\ScreenshotTaker.class
+swb\ch04examiningapage\mtVerifyingStylesIT.class
 swb\intro\mtCommonAutomationPrefixIT.class
 swb\locators\Name.class
 swb\framework\FormElements$1.class

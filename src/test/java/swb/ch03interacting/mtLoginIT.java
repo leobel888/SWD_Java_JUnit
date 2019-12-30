@@ -25,8 +25,6 @@ public class mtLoginIT {
 	public void completingAForm() throws Exception {
 		driver.get(baseUrl + "/login");
 		
-//		driver.findElement(ElementBy.automationId(String.format("loginform-item-%d", 0)));
-		
 		WebElement loginForm = driver.findElement(ElementBy.automationId(String.format("loginform-item-%d", 0)));
 		
 		//will prevent the alert from appearing.
