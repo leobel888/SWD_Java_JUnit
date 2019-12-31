@@ -7,6 +7,7 @@ swb\framework\FormElements.class
 swb\interacting_3\mtTrainersIT.class
 swb\interacting_3\mtWyswygInputIT.class
 swb\drivers\AbstractDriverBinarySupplier.class
+swb\ch05pageobjects\a\mtSearchForm.class
 swb\factory\NotBy.class
 swb\intro\mtHelloWebDriverIT.class
 swb\framework\MapFactory.class
@@ -15,6 +16,7 @@ swb\framework\WebDriverCleaner.class
 swb\framework\BaseUrlDriver.class
 swb\framework\HttpStatusCodeSupplier$1.class
 swb\framework\WebDriverRunner.class
+swb\ch03interacting\mtMouseHoverIT.class
 swb\locators\ClassName.class
 swb\drivers\ChromeDriverBinarySupplier.class
 swb\factory\AnyBy.class
@@ -38,6 +40,7 @@ swb\drivers\WebDriverBinarySupplier.class
 swb\locators\react\ReactByClassName.class
 swb\framework\DelegatingWebElement.class
 swb\ch04examiningapage\mtPageTitleIT.class
+swb\ch05pageobjects\fluentbuilder\mtLoginForm.class
 swb\ch04examiningapage\mtVerifyingTextIT.class
 swb\framework\BrowserConfig.class
 swb\locators\jsdatepick\JsDatepickByClassName.class
@@ -60,7 +63,9 @@ swb\framework\FormElements$1.class
 swb\framework\DelegatingWebDriver.class
 swb\framework\BrowserRunner.class
 swb\framework\WebDriverConfig.class
+swb\ch05pageobjects\a\mtSearchFormIT.class
 swb\framework\DelegatingSearchContext.class
+swb\ch05pageobjects\fluentbuilder\mtLoginFormIT.class
 swb\locators\react\ReactByXpath.class
 swb\locators\material_ui\MaterialByXpath.class
 swb\interacting_3\mtContextMenuIT.class
