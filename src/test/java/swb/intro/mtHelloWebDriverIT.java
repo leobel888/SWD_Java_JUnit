@@ -27,12 +27,12 @@ public class mtHelloWebDriverIT {
         driver = new ChromeDriver();
 //		driver.get("http://localhost:8080/hello-webdriver.html");
 //		driver.get("http://google.com");
-		driver.get("http://localhost:8080/login");
+		driver.get("http://localhost:8080");
     }
 
     @After
     public void tearDown() throws Exception {
-		driver.quit();
+//		driver.quit();
     }
 
 /*  @Test
