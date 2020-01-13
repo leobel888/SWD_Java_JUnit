@@ -49,7 +49,7 @@ class DelegatingWebDriver extends DelegatingSearchContext<WebDriver>
 
     @Override
     public void quit() {
-//        delegate.quit();
+        delegate.quit();
     }
 
     @Override

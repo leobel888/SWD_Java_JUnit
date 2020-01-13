@@ -22,8 +22,6 @@ public class mtSearchFormIT {
         driver.get(baseUrl + "/");
 
         mtSearchForm searchForm = new mtSearchForm(driver);
-
-        searchForm.setQuery("funny cats");
-        searchForm.submit();
+        searchForm.searchFor("funny cats", "Search");
     }
 }

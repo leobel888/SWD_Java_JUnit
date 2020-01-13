@@ -22,28 +22,41 @@ public class mtSearchForm<W extends WebDriver & HasInputDevices> {
     private final W driver;
 
 	public mtSearchForm(W driver) {
-        		
 		this.driver = driver;
-		
-//		WebElement searchButton = driver.findElement(By.cssSelector("i[class='fa-search']")); //  find the search button
-//		WebElement searchButton = driver.findElement(By.className("fa-search")); 
-//		By.xpath("//*[contains(concat('',normalize-space(@class),''),' fa-search')]"),
-//		new mtLoginForm(driver.findElement(ElementBy.automationId(String.format("searchform-item-%d", 0))))       
-	   
-		new Actions(driver) // #C create actions from the driver
-                .moveToElement(driver.findElement(ElementBy.automationId(String.format("searchform-item-%d", 0))))
-				.click() // #D add a-click to the sequence
-                .perform();
-		}
+	}
 	
-	public void setQuery(String query) {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
+	public void searchFor(String query, String expectedPlaceholder) {
+		
+		ClickSearchSign(driver);
+		
+		if (!expectedPlaceholder.equals("")) {
+			verifyPlaceholder(expectedPlaceholder);
+		}
+
 		driver.findElement(By.cssSelector("input[class='search-form']"))
                 .sendKeys(query);
-	}
-
-    public void submit() {
-		driver.getKeyboard().pressKey(Keys.ENTER); // #F submit the form
+		
+		driver.getKeyboard().pressKey(Keys.ENTER);
         driver.getKeyboard().releaseKey(Keys.ENTER);
+	}
+	
+	private void ClickSearchSign(W driver) {
+//		driver.findElement(By.cssSelector("i[class='fa-search']")); //  find the search button
+//		driver.findElement(By.className("fa-search"))
+//		driver.findElement(By.xpath("//*[contains(concat('',normalize-space(@class),''),' fa-search')]"))
+//		driver.findElement(ElementBy.automationId(String.format("searchform-item-%d", 0))))    
+		
+		new Actions(driver)
+				.moveToElement(driver.findElement(ElementBy.automationId(String.format("searchform-item-%d", 0))))
+				.click()
+                .perform();
+	}
+	
+	private void verifyPlaceholder(String expectedPlaceholder) {
+		String actualPlaceholder = driver.findElement(By.cssSelector("input[class='search-form']")).getAttribute("placeholder");
+        if (!expectedPlaceholder.equals(actualPlaceholder)) {
+            throw new IllegalStateException("expected " + expectedPlaceholder + " but got " + actualPlaceholder);
+        }
     }
+	
 }
