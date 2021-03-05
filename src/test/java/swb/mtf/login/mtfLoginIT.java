@@ -4,12 +4,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.By;
 import swb.framework.WebDriverRunner;
+import swb.mtf.pagefactory.LoadingPageFactory;
+
+import org.openqa.selenium.WebElement;
 
 import javax.inject.Inject;
-import java.util.concurrent.TimeUnit;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(WebDriverRunner.class)
@@ -34,5 +35,14 @@ public class mtfLoginIT {
 								.isSelected());
 		
 		login.submit();
+		
+		WebElement element = driver
+										.findElements(By.tagName("a"))
+										.stream()
+										.filter(e -> e.getText().contains("TRAINERS"))
+										.findFirst()
+										.get();
+										
+		element.click();
 	}
 }

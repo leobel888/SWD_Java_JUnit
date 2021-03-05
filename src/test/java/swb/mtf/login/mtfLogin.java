@@ -2,6 +2,8 @@ package swb.mtf.login;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import swb.mtf.pagefactory.Path;
+import swb.mtf.pagefactory.Verify;
 
 @Path("/login")
 @Verify(title = "login", xpath = "//h2[text()='Login here']")
