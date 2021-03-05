@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: swb.mtf.login.mtfLoginIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.614 sec - in swb.mtf.login.mtfLoginIT
